@@ -87,7 +87,7 @@ def direction(matrix):
     results = []
     for direction, action in MERGE_FUNCTIONS.items():
         if matrix!=action(matrix):
-            result = direction, search(action(matrix), 2)
+            result = direction, search(action(matrix), 4)
 
             results.append(result)
     print (results)
